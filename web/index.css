@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signupFrm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputContainer {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #aaa;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #2691d9; /* Change label color on focus */
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2691d9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #1e7bb8; /* Darker shade on hover */
+}
